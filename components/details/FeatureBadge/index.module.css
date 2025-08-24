@@ -1,0 +1,17 @@
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #f3f4f6; /* bg-accent, assuming gray-100 */
+  padding: 0.625rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.iconContainer {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  display: inline-flex;
+}

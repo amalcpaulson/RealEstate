@@ -1,0 +1,127 @@
+.header {
+  padding: 0.5rem 0.5rem;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIcon {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.75rem;
+  background-color: rgba(37, 99, 235, 0.15); /* bg-primary/15, using blue-600 as primary */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunIcon {
+  height: 1rem;
+  width: 1rem;
+  color: #2563eb; /* text-primary, using blue-600 */
+}
+
+.logoText {
+  font-weight: 600;
+}
+
+.orgButton {
+  border-radius: 0.375rem;
+  padding: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.orgButton:hover {
+  background-color: #374151; /* bg-sidebar-accent, assuming a gray shade */
+}
+
+.chevronIcon {
+  height: 1rem;
+  width: 1rem;
+  color: #6b7280; /* text-muted-foreground, using gray-500 */
+}
+
+.separator {
+  margin: 0.5rem 0;
+}
+
+.iconWrapper {
+  margin-right: 0.375rem;
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+}
+
+.iconWrapperActive {
+  background-color: rgba(37, 99, 235, 0.15); /* bg-primary/15 */
+  color: #2563eb; /* text-primary */
+}
+
+.iconWrapperInactive {
+  color: #6b7280; /* text-muted-foreground */
+}
+
+.menuIcon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+}
+
+.menuAction {
+  pointer-events: none;
+}
+
+.chevronRight {
+  height: 1rem;
+  width: 1rem;
+  color: #6b7280; /* text-muted-foreground */
+}
+
+.footerProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.footerProfile:hover {
+  background-color: #374151; /* bg-sidebar-accent */
+}
+
+.avatar {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.profileInfo {
+  line-height: 1;
+}
+
+.profileName {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.profileEmail {
+  font-size: 0.75rem;
+  color: #6b7280; /* text-muted-foreground */
+}
