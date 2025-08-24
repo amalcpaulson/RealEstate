@@ -1,0 +1,50 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background-color: rgba(255, 255, 255, 0.8); /* bg-background/80, assuming white background */
+  backdrop-filter: blur(10px);
+}
+
+@supports (backdrop-filter: blur(10px)) {
+  .header {
+    background-color: rgba(255, 255, 255, 0.6); /* bg-background/60 */
+  }
+}
+
+.headerContent {
+  display: flex;
+  height: 3.5rem; /* h-14 */
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.welcomeText {
+  font-weight: 600;
+}
+
+.buttonContainer {
+  margin-left: auto;
+}
+
+.createButton {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.plusIcon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.main {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 1.5rem;
+  }
+}

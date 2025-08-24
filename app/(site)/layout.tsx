@@ -1,10 +1,13 @@
+"use client";
+
 import { SiteFooter } from "@/components/site/SiteFooter/page";
 import type { ReactNode } from "react";
+import styles from "./index.module.css";
 
 export default function SiteLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-dvh flex-col">
-      <main className="flex-1">{children}</main>
+    <div className={styles.container}>
+      <main className={styles.main}>{children}</main>
       <SiteFooter />
     </div>
   );

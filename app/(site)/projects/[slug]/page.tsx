@@ -32,6 +32,7 @@ import {
 import ProjectNavbar from "@/components/site/ProjectNavbar/page";
 import FeatureBadge from "@/components/details/FeatureBadge/page";
 import Neighbourhood from "@/components/details/Neighbourhood/page";
+import styles from "./index.module.css";
 
 function allProjects(): Project[] {
   return (CITIES as readonly string[]).flatMap(
@@ -71,26 +72,24 @@ export default async function ProjectPage(
   return (
     <>
       <ProjectNavbar />
-      <div className="max-w-6xl mx-auto px-4 py-6 lg:py-8">
+      <div className={styles.container}>
         {/* Header */}
-        <div className="mb-5">
-          <div className="flex items-center gap-2 mb-2">
-            <Badge className="rounded-full px-2 py-1 text-xs border">
-              <FlowerIcon size={14} className="mr-1" /> Assetz Properties
+        <div className={styles.header}>
+          <div className={styles.badgeContainer}>
+            <Badge className={styles.badge}>
+              <FlowerIcon size={14} className={styles.badgeIcon} /> Assetz Properties
             </Badge>
           </div>
-          <h1 className="text-2xl font-semibold leading-tight sm:text-3xl">
-            {project.title}
-          </h1>
-          <div className="mt-1 flex items-center text-sm text-muted-foreground w-full justify-between">
-            <div className="flex items-center gap-1">
+          <h1 className={styles.title}>{project.title}</h1>
+          <div className={styles.subtitle}>
+            <div className={styles.location}>
               <MapPin size={14} /> {project.location}
             </div>
-            <div className="flex items-center gap-2">
-              <Link href="/" className="text-sm flex items-center gap-1">
+            <div className={styles.actions}>
+              <Link href="/" className={styles.actionLink}>
                 <Share2 size={14} /> Share
               </Link>
-              <Link href="/" className="text-sm flex items-center gap-1">
+              <Link href="/" className={styles.actionLink}>
                 <Bookmark size={14} /> Bookmark
               </Link>
             </div>
@@ -98,66 +97,66 @@ export default async function ProjectPage(
         </div>
 
         {/* Content */}
-        <div className="grid gap-6 lg:grid-cols-5">
-          <div className="lg:col-span-5 grid grid-cols-6 space-x-4 border rounded-xl p-3">
-            <div className="col-span-3 relative aspect-[4/3]">
+        <div className={styles.content}>
+          <div className={styles.imageGrid}>
+            <div className={styles.mainImage}>
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
                 sizes="(min-width: 1024px) 66vw, 100vw"
-                className="object-cover rounded-xl"
+                className={styles.image}
                 priority={false}
               />
-              <div className="absolute inset-0 flex items-end justify-start p-3">
-                <Button variant="default" className="bg-white text-black/50">
+              <div className={styles.imageOverlay}>
+                <Button variant="default" className={styles.showPhotosButton}>
                   <FlowerIcon size={16} />
                   Show All Photos
                 </Button>
               </div>
             </div>
-            <div className="col-span-2 row-span-2 space-y-4">
-              <div className="relative aspect-[16.8/9]">
+            <div className={styles.sideImages}>
+              <div className={styles.sideImage}>
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   sizes="(min-width: 1024px) 66vw, 100vw"
-                  className="object-cover rounded-xl"
+                  className={styles.image}
                   priority={false}
                 />
               </div>
-              <div className="relative aspect-[16/9]">
+              <div className={styles.sideImage}>
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   sizes="(min-width: 1024px) 66vw, 100vw"
-                  className="object-cover rounded-xl"
+                  className={styles.image}
                   priority={false}
                 />
               </div>
             </div>
-            <div className="col-span-1 relative aspect-[9/19.7]">
+            <div className={styles.thumbnailImage}>
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
                 sizes="(min-width: 1024px) 66vw, 100vw"
-                className="object-cover rounded-xl"
+                className={styles.image}
                 priority={false}
               />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Button variant="default" className="bg-white text-black/50">
+              <div className={styles.thumbnailOverlay}>
+                <Button variant="default" className={styles.playButton}>
                   <Play size={14} />
                 </Button>
               </div>
             </div>
           </div>
-          <div className="lg:col-span-3 space-y-4">
-            <Card className="shadow-none border-0">
-              <CardContent className="p-4">
-                <p className="text-sm text-muted-foreground">
+          <div className={styles.details}>
+            <Card className={styles.card}>
+              <CardContent className={styles.cardContent}>
+                <p className={styles.description}>
                   Claim your own piece of majestic living beneath the clouds.
                   Welcome aboard Green Clouds, Kerala’s First Biophilic Sky
                   Bungalows by Veegaland Homes. It is exceptionally unique and
@@ -165,9 +164,9 @@ export default async function ProjectPage(
                   designed for a discerning community of families who prioritise
                   life, luxury and nature.
                 </p>
-                <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-2">
+                <div className={styles.features}>
                   <FeatureBadge
-                    icon={<TriangleRightIcon size={14} className="rotate-90" />}
+                    icon={<TriangleRightIcon size={14} className={styles.featureIcon} />}
                     label="17 acres"
                   />
                   <FeatureBadge
@@ -185,20 +184,20 @@ export default async function ProjectPage(
                     label="80+ More"
                   />
                 </div>
-                <div className="mt-12">
+                <div className={styles.accordion}>
                   <Accordion
                     type="single"
                     collapsible
-                    className="w-full"
+                    className={styles.accordionContainer}
                     defaultValue="item-1"
                   >
                     <AccordionItem value="item-1">
                       <AccordionTrigger>
-                        <div className="flex items-center gap-2">
+                        <div className={styles.accordionTrigger}>
                           <FlipHorizontalIcon size={14} /> Floor & Counter
                         </div>
                       </AccordionTrigger>
-                      <AccordionContent className="flex flex-col gap-4 text-balance">
+                      <AccordionContent className={styles.accordionContent}>
                         <p>
                           Our flagship product combines cutting-edge technology
                           with sleek design. Built with premium materials, it
@@ -213,11 +212,11 @@ export default async function ProjectPage(
                     </AccordionItem>
                     <AccordionItem value="item-2">
                       <AccordionTrigger>
-                        <div className="flex items-center gap-2">
+                        <div className={styles.accordionTrigger}>
                           <FileStack size={14} /> Fitting
                         </div>
                       </AccordionTrigger>
-                      <AccordionContent className="flex flex-col gap-4 text-balance">
+                      <AccordionContent className={styles.accordionContent}>
                         <p>
                           We offer worldwide shipping through trusted courier
                           partners. Standard delivery takes 3-5 business days,
@@ -233,11 +232,11 @@ export default async function ProjectPage(
                     </AccordionItem>
                     <AccordionItem value="item-3">
                       <AccordionTrigger>
-                        <div className="flex items-center gap-2">
+                        <div className={styles.accordionTrigger}>
                           <Plus size={14} /> Wall & Ceiling
                         </div>
                       </AccordionTrigger>
-                      <AccordionContent className="flex flex-col gap-4 text-balance">
+                      <AccordionContent className={styles.accordionContent}>
                         <p>
                           We stand behind our products with a comprehensive
                           30-day return policy. If you&apos;re not completely
@@ -258,16 +257,14 @@ export default async function ProjectPage(
           </div>
 
           {/* Right */}
-          <div className="col-span-2 lg:sticky lg:top-24 h-max">
-            <Card className="shadow-none border-0 bg-accent mx-2 p-4 rounded-3xl">
-              <CardContent className="p-4">
-                <div className="text-center">
-                  <div className="text-2xl font-semibold">
-                    ₹{project.priceStr}
-                  </div>
+          <div className={styles.sidebar}>
+            <Card className={styles.sidebarCard}>
+              <CardContent className={styles.sidebarCardContent}>
+                <div className={styles.price}>
+                  ₹{project.priceStr}
                 </div>
-                <Button className="w-full mt-4">Contact Seller</Button>
-                <div className="text-sm text-muted-foreground mt-4 text-center">
+                <Button className={styles.contactButton}>Contact Seller</Button>
+                <div className={styles.possession}>
                   Possession on January 25
                 </div>
               </CardContent>
@@ -275,20 +272,20 @@ export default async function ProjectPage(
           </div>
         </div>
 
-        <hr className="my-10" />
+        <hr className={styles.divider} />
 
         {/* Similar section */}
-        <div className="mt-10">
-          <h2 className="text-3xl font-semibold mb-3">Explore Neighbourhood</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5 mt-8">
-            <div className="col-span-3">
+        <div className={styles.neighbourhood}>
+          <h2 className={styles.sectionTitle}>Explore Neighbourhood</h2>
+          <div className={styles.neighbourhoodContent}>
+            <div className={styles.neighbourhoodDetails}>
               <Neighbourhood />
             </div>
-            <div className="col-span-2 px-4">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-xl border">
+            <div className={styles.mapContainer}>
+              <div className={styles.map}>
                 <iframe
                   src="https://www.google.com/maps?q=12.9716,77.5946&z=13&output=embed"
-                  className="absolute inset-0 h-full w-full"
+                  className={styles.iframe}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Map view of neighbourhood"
@@ -299,17 +296,17 @@ export default async function ProjectPage(
           </div>
         </div>
 
-        <hr className="my-10" />
+        <hr className={styles.divider} />
 
         {/* Similar section */}
-        <div className="mt-10">
-          <h2 className="text-3xl font-semibold mb-3 flex items-center gap-2">
+        <div className={styles.similar}>
+          <h2 className={styles.sectionTitle}>
             Popular Properties in {project.city} <ChevronRightIcon size={28} />
           </h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-8">
+          <div className={styles.similarGrid}>
             {similar.slice(0, 4).map((p) => (
-                <PropertyCard key={p.id} project={p} />
-              ))}
+              <PropertyCard key={p.id} project={p} />
+            ))}
           </div>
         </div>
       </div>

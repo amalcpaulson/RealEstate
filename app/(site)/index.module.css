@@ -1,0 +1,105 @@
+.heroSection {
+  padding: 0.25rem;
+}
+
+.heroContainer {
+  position: relative;
+  height: 300px;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 640px) {
+  .heroContainer {
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .heroContainer {
+    height: 479px;
+  }
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.heroContent {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.popularSection {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1120px;
+  padding: 4.5rem 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .popularSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.sectionTitle {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.propertyGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .propertyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .propertyGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .propertyGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.container {
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
