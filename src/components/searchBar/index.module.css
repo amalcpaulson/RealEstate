@@ -1,0 +1,123 @@
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 60px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1000px;
+  position: relative;
+  z-index: 2;
+}
+
+.dropdownContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.dropdownContainer:last-child {
+  border-right: none;
+}
+
+.dropdownLabel {
+  font-size: 0.8rem;
+  color: #777;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  width: 100%;
+  min-width: 120px;
+}
+
+.dropdownIcon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #888;
+}
+
+.searchInput {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  padding: 0 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.searchInput input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #333;
+}
+
+.searchButton {
+  background-color: #335cff;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.searchButton:hover {
+  background-color: #2b4ccb;
+}
+
+.filters {
+  display: flex;
+  flex-grow: 1;
+  gap: 1rem;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.filterGroup label {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.filterGroup input {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+

@@ -1,68 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Fustat", sans-serif;
+  line-height: 1.3;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #0c0c11;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --padding-side: 10vw;
+  --padding-section: 4vh var(--padding-side);
+
+  --font-size-68: 68px;
+  --font-size-40: 40px;
+  --font-size-32: 32px;
+  --font-size-28: 28px;
+  --font-size-24: 24px;
+  --font-size-20: 20px;
+  --font-size-16: 16px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
+
   min-width: 320px;
   min-height: 100vh;
+  width: 100%;
+  font-family: "Fustat", sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: #f5f5f5;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-color-scheme: light) {
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+@media screen and (max-width: 1000px) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --font-size-68: 58px;
+    --font-size-40: 32px;
+    --font-size-32: 26px;
+    --font-size-28: 24px;
+    --font-size-24: 22px;
+    --font-size-20: 19px;
+    --font-size-16: 15px;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --font-size-68: 48px;
+    --font-size-40: 28px;
+    --font-size-32: 23px;
+    --font-size-28: 20px;
+    --font-size-24: 19px;
+    --font-size-20: 17px;
+    --font-size-16: 14px;
   }
 }
