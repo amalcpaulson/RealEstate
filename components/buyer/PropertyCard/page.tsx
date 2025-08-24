@@ -3,23 +3,25 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import type { Project } from "@/lib/types";
-import { Badge } from "../ui/badge";
+import { Badge } from "../../ui/badge";
 import { Bookmark, MapPin } from "lucide-react";
+
+import styles from "./index.module.css";
 
 export function PropertyCard({ project }: { project: Project }) {
   return (
-    <Link href={`/projects/${project.slug}`} className="block h-full">
-      <Card className="overflow-hidden h-full flex flex-col shadow-none">
-        <div className="relative aspect-[4/3] w-full">
+    <Link href={`/projects/${project.slug}`} className={styles.link}>
+      <Card className={styles.card}>
+        <div className={styles.imageWrapper}>
           <Image
             src={project.image}
             alt={project.title}
             fill
             sizes="(min-width: 1024px) 262px, (min-width: 640px) 33vw, 100vw"
-            className="object-cover p-2 rounded-[18px]"
+            className={styles.image}
             priority={false}
           />
-          <div className="absolute right-1.5 top-2 flex gap-2">
+          <div className={styles.logoWrapper}>
             <Image
               src={project.logo}
               alt="Builder Logo"
@@ -28,16 +30,14 @@ export function PropertyCard({ project }: { project: Project }) {
             />
           </div>
         </div>
-        <CardContent className="p-3 pt-0">
-          <Badge className="mb-2 bg-muted text-muted-foreground rounded-full py-1 px-2">
-            <MapPin size={12} className="mr-1" />
+        <CardContent className={styles.content}>
+          <Badge className={styles.badge}>
+            <MapPin size={12} className={styles.mapIcon} />
             {project.location}
           </Badge>
-          <h3 className="line-clamp-2 text-sm leading-5 font-medium min-h-[2.5rem]">
-            {project.title}
-          </h3>
-          <div className="flex items-center justify-between">
-            <p className="mt-2 text-md font-bold text-primary">{`₹${project.priceStr}`}</p>
+          <h3 className={styles.title}>{project.title}</h3>
+          <div className={styles.footer}>
+            <p className={styles.price}>{`₹${project.priceStr}`}</p>
             <Bookmark size={20} />
           </div>
         </CardContent>

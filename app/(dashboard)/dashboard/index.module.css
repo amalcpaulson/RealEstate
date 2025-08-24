@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space-y-6 */
+}
+
+/* Top stats grid */
+.statsGrid {
+  display: grid;
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+/* Engagement + Top Performers grid */
+.engagementGrid {
+  display: grid;
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 1024px) {
+  .engagementGrid {
+    grid-template-columns: repeat(3, 1fr); /* lg:grid-cols-3 */
+  }
+}
+
+.engagementMain {
+  grid-column: span 2; /* lg:col-span-2 */
+}
+
+/* Media + Leads grid */
+.mediaGrid {
+  display: grid;
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 768px) {
+  .mediaGrid {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+.mediaCard {
+  grid-column: span 1; /* md:col-span-1 */
+}
+
+.leadsCard {
+  grid-column: span 2; /* md:col-span-2 */
+}
+
+.recentMediaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem; /* gap-2 */
+}
+
+.mediaItem {
+  aspect-ratio: 16 / 9; /* aspect-video */
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: var(--muted, #f3f4f6);
+}
+
+.leadsTrend {
+  height: 10rem; /* h-40 */
+  border-radius: 0.375rem; /* rounded-md */
+  background-color: var(--muted, #f3f4f6);
+}

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { SearchBar, type SearchValues } from "@/components/buyer/search-bar";
+import { SearchBar, type SearchValues } from "@/components/buyer/SearchBar/page";
 import { BellDot, Building2Icon, ChevronDown } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "../../ui/avatar";
 import styles from "./index.module.css";

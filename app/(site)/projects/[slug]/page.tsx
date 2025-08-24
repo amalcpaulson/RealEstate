@@ -21,7 +21,6 @@ import {
 } from "lucide-react";
 import type { Project } from "@/lib/types";
 import { CITIES, POPULAR_BY_CITY } from "@/lib/data";
-import { PropertyCard } from "@/components/buyer/property-card";
 import Link from "next/link";
 import {
   Accordion,
@@ -33,6 +32,7 @@ import ProjectNavbar from "@/components/site/ProjectNavbar/page";
 import FeatureBadge from "@/components/details/FeatureBadge/page";
 import Neighbourhood from "@/components/details/Neighbourhood/page";
 import styles from "./index.module.css";
+import { PropertyCard } from "@/components/buyer/PropertyCard/page";
 
 function allProjects(): Project[] {
   return (CITIES as readonly string[]).flatMap(
