@@ -32,7 +32,7 @@ import ProjectNavbar from "@/components/site/ProjectNavbar/page";
 import FeatureBadge from "@/components/details/FeatureBadge/page";
 import Neighbourhood from "@/components/details/Neighbourhood/page";
 import styles from "./index.module.css";
-import { PropertyCard } from "@/components/buyer/PropertyCard/page";
+import { PropertyCard } from "@/components/PropertyCard/page";
 
 function allProjects(): Project[] {
   return (CITIES as readonly string[]).flatMap(

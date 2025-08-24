@@ -1,8 +1,8 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { EngagementCard } from "@/components/dashboard/engagement-card";
-import { TopPerformersCard } from "@/components/dashboard/top-performers-card";
+import { EngagementCard } from "@/components/dashboard/EngagementCard/page";
+import { TopPerformersCard } from "@/components/dashboard/TopPerformersCard/page";
 import { Eye, ThumbsUp, UserPlus } from "lucide-react";
-import { StatCard } from "@/components/dashboard/stat-card";
+import { StatCard } from "@/components/dashboard/StatCard/page";
 import styles from "./index.module.css";
 
 export default function DashboardPage() {

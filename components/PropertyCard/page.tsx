@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import type { Project } from "@/lib/types";
-import { Badge } from "../../ui/badge";
+import { Badge } from "../ui/badge";
 import { Bookmark, MapPin } from "lucide-react";
 
 import styles from "./index.module.css";

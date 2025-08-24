@@ -1,4 +1,4 @@
-import { ListingTable } from "@/components/dashboard/listing-table";
+import { ListingTable } from "@/components/dashboard/ListingTable/page";
 import styles from "./index.module.css";
 
 export default function ListingPage() {

@@ -1,0 +1,321 @@
+.cardHeader {
+  padding-bottom: 0.5rem;
+}
+.headerRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.headerActions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.searchWrapper {
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  color: var(--muted-foreground);
+  pointer-events: none;
+}
+.searchInput {
+  width: 220px;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  padding-left: 2rem;
+}
+.select {
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: var(--background);
+  padding: 0 0.75rem;
+}
+
+.cardContent {
+  padding-top: 0;
+}
+.tableWrapper {
+  overflow: hidden;
+}
+.table {
+  width: 100%;
+  font-size: 0.875rem;
+  text-align: left;
+}
+.tableHead {
+  background-color: var(--muted-60);
+  color: var(--muted-foreground);
+}
+.tableBody tr + tr {
+  border-top: 1px solid var(--border);
+  padding: 10px 0px 10px 0px; 
+
+}
+.tableBody .tableRow {
+  cursor: pointer;
+}
+.tableRow:hover {
+  background-color: var(--muted-40);
+}
+
+.instructorCell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.thumbWrapper {
+  position: relative;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+.thumbImage {
+  object-fit: cover;
+}
+.instructorName {
+  font-weight: 500;
+}
+
+.platformCell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.platformDot {
+  display: inline-flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  background-color: #2563eb;
+}
+.numCell {
+  font-variant-numeric: tabular-nums;
+}
+
+.activeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #059669;
+}
+.activeDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #10b981;
+}
+.completedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--muted-foreground);
+}
+.completedDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #d1d5db;
+}
+
+.menuCell {
+  padding: 0 0.5rem;
+  text-align: right;
+  color: var(--muted-foreground);
+}
+.menuIcon {
+  margin-left: auto;
+  width: 1rem;
+  height: 1rem;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 2rem;
+}
+.infoLabel {
+  color: var(--muted-foreground);
+}
+.infoValue {
+  font-weight: 500;
+}
+
+.drawer {
+  width: 40vw;
+}
+.drawerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.drawerTitle {
+  font-size: 1.25rem;
+}
+.drawerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.openLink {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.openLink:hover {
+  text-decoration: underline;
+}
+.openIcon {
+  width: 1rem;
+  height: 1rem;
+}
+.closeBtn {
+  border-radius: 0.375rem;
+  padding: 0.25rem;
+}
+.closeBtn:hover {
+  background: var(--muted);
+}
+.closeIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.drawerBody {
+  padding: 1rem 0;
+}
+.tabsList {
+  display: inline-flex;
+  gap: 1.25rem;
+  width: 100%;
+  padding: 0 0.75rem;
+  background: transparent;
+}
+.tabTrigger {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 0.5rem 0;
+  display: flex;
+  gap: 0.25rem;
+}
+.tabTrigger[data-state="active"] {
+  border-bottom-color: #3b82f6;
+}
+.tabIcon {
+  width: 1rem;
+  height: 1rem;
+}
+.tabsContent {
+  margin-top: 0.25rem;
+  display: grid;
+  gap: 1.5rem;
+}
+.analyticsContent {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.sectionHeader {
+  background: var(--accent);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(113, 113, 122, 0.6);
+}
+.sectionContent {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 2rem;
+  padding: 0 0.875rem;
+}
+.mediaRow {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 180px 1fr;
+}
+.mediaLabel {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+.mediaItems {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+.photoThumb,
+.videoThumb {
+  position: relative;
+  width: 4rem;
+  height: 3rem;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.videoThumb {
+  background: var(--muted);
+}
+.moreThumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 3rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border);
+  background: var(--muted);
+  font-size: 0.875rem;
+}
+.videoOverlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.playBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.9);
+}
+.playIcon {
+  width: 1rem;
+  height: 1rem;
+  color: var(--foreground);
+}
+
+.sectionInfo {
+  margin-top: 0.5rem;
+  padding: 0 0.875rem;
+}
+.description {
+  margin-top: 0.5rem;
+  padding: 0 0.875rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: var(--muted-foreground);
+}

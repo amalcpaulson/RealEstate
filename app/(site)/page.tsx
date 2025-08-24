@@ -1,5 +1,5 @@
-import { SearchBar } from "@/components/buyer/SearchBar/page";
-import { PropertyCard } from "@/components/buyer/PropertyCard/page";
+import { SearchBar } from "@/components/SearchBar/page";
+import { PropertyCard } from "@/components/PropertyCard/page";
 import { POPULAR_BY_CITY } from "@/lib/data";
 import { ChevronRight } from "lucide-react";
 import Navbar from "@/components/site/Navbar/page";

@@ -1,0 +1,108 @@
+.card {
+  border-radius: 0.75rem; /* rounded-xl */
+}
+
+.header {
+  padding-bottom: 0.75rem; /* pb-3 */
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+}
+
+.iconWrapper {
+  margin-right: 0.5rem; /* mr-2 */
+  display: flex;
+  width: 1.5rem; /* size-6 */
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: hsl(var(--muted));
+  color: hsl(var(--muted-foreground));
+}
+
+.title {
+  font-weight: 600; /* font-semibold */
+}
+
+.seeAllButton {
+  margin-left: auto; /* ml-auto */
+  height: 2rem; /* h-8 */
+  font-size: 0.75rem; /* text-xs */
+  padding-left: 0.75rem; /* px-3 */
+  padding-right: 0.75rem;
+}
+
+.content {
+  padding-top: 0; /* pt-0 */
+}
+
+.tabsList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* grid-cols-2 */
+  width: 100%; /* w-full */
+}
+
+.list {
+  margin-top: 0.75rem; /* mt-3 */
+  border-top: 1px solid hsl(var(--border)); /* divide-y simulation */
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* gap-3 */
+  padding-top: 0.75rem; /* py-3 */
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid hsl(var(--border)); /* divide-y */
+}
+
+.avatar {
+  display: flex;
+  width: 2rem; /* size-8 */
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--background));
+}
+
+.avatarAccent {
+  background-color: rgb(209 250 229); /* bg-emerald-100 */
+}
+
+.name {
+  font-size: 0.875rem; /* text-sm */
+}
+
+.valueWrapper {
+  margin-left: auto; /* ml-auto */
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* gap-3 */
+}
+
+.valueText {
+  text-align: right;
+}
+
+.valueMain {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  font-variant-numeric: tabular-nums;
+}
+
+.valueSecondary {
+  font-size: 0.625rem; /* text-[10px] */
+  color: hsl(var(--muted-foreground));
+  font-variant-numeric: tabular-nums;
+}
+
+.chevron {
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
+  color: hsl(var(--muted-foreground));
+}
