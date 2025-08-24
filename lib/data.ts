@@ -53,7 +53,7 @@ export const POPULAR_BY_CITY: Record<City, Project[]> = {
       type: "Villa",
     },
     {
-      id: "ko-1",
+      id: "ko-4",
       slug: "kochi-skyline-apartments",
       title: "2 BHK Apartments at Skyline Apartments",
       city: "Kochi",
@@ -68,7 +68,7 @@ export const POPULAR_BY_CITY: Record<City, Project[]> = {
       type: "Apartment",
     },
     {
-      id: "ko-2",
+      id: "ko-5",
       slug: "kochi-marina-residences",
       title: "3 BHK Apartments at Marina Residences",
       city: "Kochi",
@@ -83,7 +83,7 @@ export const POPULAR_BY_CITY: Record<City, Project[]> = {
       type: "Apartment",
     },
     {
-      id: "ko-3",
+      id: "ko-6",
       slug: "kochi-greens-villas",
       title: "4 BHK Villas at Greens Villas",
       city: "Kochi",
@@ -98,7 +98,7 @@ export const POPULAR_BY_CITY: Record<City, Project[]> = {
       type: "Villa",
     },
     {
-      id: "ko-2",
+      id: "ko-7",
       slug: "kochi-marina-residences",
       title: "3 BHK Apartments at Marina Residences",
       city: "Kochi",
@@ -113,7 +113,7 @@ export const POPULAR_BY_CITY: Record<City, Project[]> = {
       type: "Apartment",
     },
     {
-      id: "ko-3",
+      id: "ko-8",
       slug: "kochi-greens-villas",
       title: "4 BHK Villas at Greens Villas",
       city: "Kochi",
@@ -174,7 +174,7 @@ export const POPULAR_BY_CITY: Record<City, Project[]> = {
       type: "Plot",
     },
     {
-      id: "pu-1",
+      id: "pu-4",
       slug: "pune-hillcrest",
       title: "2 BHK Apartments at Hillcrest Homes",
       city: "Pune",
@@ -189,7 +189,7 @@ export const POPULAR_BY_CITY: Record<City, Project[]> = {
       type: "Apartment",
     },
     {
-      id: "pu-2",
+      id: "pu-5",
       slug: "pune-lavish-villas",
       title: "4 BHK Villas at Lavish Villas",
       city: "Pune",
@@ -204,7 +204,7 @@ export const POPULAR_BY_CITY: Record<City, Project[]> = {
       type: "Villa",
     },
     {
-      id: "pu-3",
+      id: "pu-6",
       slug: "pune-urban-plots",
       title: "Residential Plots at Urban Plots",
       city: "Pune",
@@ -218,7 +218,7 @@ export const POPULAR_BY_CITY: Record<City, Project[]> = {
       type: "Plot",
     },
     {
-      id: "pu-3",
+      id: "pu-7",
       slug: "pune-urban-plots",
       title: "Residential Plots at Urban Plots",
       city: "Pune",
@@ -232,7 +232,7 @@ export const POPULAR_BY_CITY: Record<City, Project[]> = {
       type: "Plot",
     },
     {
-      id: "pu-1",
+      id: "pu-8",
       slug: "pune-hillcrest",
       title: "2 BHK Apartments at Hillcrest Homes",
       city: "Pune",
