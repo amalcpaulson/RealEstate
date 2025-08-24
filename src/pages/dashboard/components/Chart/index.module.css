@@ -1,0 +1,106 @@
+.chartContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.platformTabs {
+  display: flex;
+  gap: 8px;
+}
+
+.platformTab {
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  color: #718096;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.platformTab.active {
+  background: #edf2f7;
+  color: #2d3748;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4a5568;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chartValue {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.change {
+  color: #38a169;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.periodTabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.periodTab {
+  padding: 6px 12px;
+  border: none;
+  background: transparent;
+  color: #718096;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.periodTab.active {
+  background: #edf2f7;
+  color: #2d3748;
+}
+
+.chartArea {
+  position: relative;
+}
+
+.xAxis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding: 0 50px;
+}
+
+.axisLabel {
+  font-size: 12px;
+  color: #a0aec0;
+}

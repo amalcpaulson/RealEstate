@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.emoji {
+  font-size: 24px;
+}
+
+.createButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.createButton:hover {
+  background: #3182ce;
+}

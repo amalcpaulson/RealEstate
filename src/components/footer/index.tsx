@@ -14,63 +14,36 @@ const Footer: React.FC = () => {
         <div className={styles.column}>
           <h4>Discover</h4>
           <ul>
-            <li>
-              <a href="#">Projects</a>
-            </li>
-            <li>
-              <a href="#">Properties</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
         <div className={styles.column}>
           <h4>Properties</h4>
           <ul>
-            <li>
-              <a href="#">Apartment</a>
-            </li>
-            <li>
-              <a href="#">Villa</a>
-            </li>
-            <li>
-              <a href="#">Plot</a>
-            </li>
-            <li>
-              <a href="#">Co-Working Space</a>
-            </li>
-            <li>
-              <a href="#">Holiday Homes</a>
-            </li>
+            <li><a href="#">Apartment</a></li>
+            <li><a href="#">Villa</a></li>
+            <li><a href="#">Plot</a></li>
+            <li><a href="#">Co-Working Space</a></li>
+            <li><a href="#">Holiday Homes</a></li>
           </ul>
         </div>
         <div className={styles.column}>
           <h4>Services</h4>
           <ul>
-            <li>
-              <a href="#">List Your Property</a>
-            </li>
-            <li>
-              <a href="#">Rent Your Property</a>
-            </li>
-            <li>
-              <a href="#">Housing Loans</a>
-            </li>
+            <li><a href="#">List Your Property</a></li>
+            <li><a href="#">Rent Your Property</a></li>
+            <li><a href="#">Housing Loans</a></li>
           </ul>
         </div>
         <div className={styles.column}>
           <h4>Address</h4>
           <address>
-            3rd Floor, Innerspace Business Centre
-            <br />
-            Kochi, Kerala, 682020
-            <br />
-            Phone: +91 95 82 48 25 78
-            <br />
+            3rd Floor, Innerspace Business Centre<br />
+            Kochi, Kerala, 682020<br />
+            Phone: +91 95 82 48 25 78<br />
             Email: mega@realtor.com
           </address>
         </div>

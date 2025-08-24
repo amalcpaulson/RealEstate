@@ -2,6 +2,8 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFound from "./pages/notFound";
 import ProjectListing from "./pages/projectListing";
+import { Dashboard } from "./pages/dashboard";
+import { ProjectDetails } from "./pages/projectDetails";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +18,14 @@ function App() {
     {
       path: "/projectlisting",
       element: <ProjectListing />,
+    },
+    {
+      path: "/projectdetails",
+      element: <ProjectDetails />,
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
     },
     // {
     //   path: "/",
